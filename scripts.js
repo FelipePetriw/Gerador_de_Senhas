@@ -38,7 +38,8 @@ function copy() {
 
 const passwordLengthEl = document.querySelector("#password-length")
 passwordLengthEl.addEventListener("input", function () {
-    const passwordLength = passwordLengthEl.value
+    passwordLength = passwordLengthEl.value
+    document.querySelector('#password-length-text').innerText = passwordLength
     generatePassword()
 })
 
