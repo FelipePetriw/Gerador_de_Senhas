@@ -153,3 +153,22 @@ main {
     background: #9b51e0;
     cursor: pointer;
 }
+
+.submit {
+    text-align: center;
+}
+
+.submit button {
+    background-color: #bb6bd9;
+    font-size: 1.375rem;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    transition: all 0.2s;
+}
+
+.submit button:hover {
+    background-color: #9b51e0;
+}
