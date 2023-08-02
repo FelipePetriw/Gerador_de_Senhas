@@ -105,5 +105,6 @@ symbolCheckEl.addEventListener("click", generatePassword)
 
 document.querySelector("#copy-1").addEventListener("click", copy)
 document.querySelector("#copy-2").addEventListener("click", copy)
+document.querySelector("#renew").addEventListener("click", generatePassword)
 
 generatePassword()
