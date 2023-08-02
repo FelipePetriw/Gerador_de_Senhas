@@ -33,6 +33,7 @@ function generatePassword() {
     inputEl.value = password
 
     calculateQuality()
+    calculateFontSize()
 }
 
 function calculateQuality() {
@@ -64,6 +65,26 @@ function calculateQuality() {
         securityIndicatorBarEl.classList.add("completed")
     } else {
         securityIndicatorBarEl.classList.remove("completed")
+    }
+}
+
+function calculateFontSize() {
+    if(passwordLength > 45) {
+        inputEl.classList.remove("font-sm")
+        inputEl.classList.remove("font-xs")
+        inputEl.classList.add("font-xxs")
+    } else if(passwordLength > 32) {
+        inputEl.classList.remove("font-sm")
+        inputEl.classList.add("font-xs")
+        inputEl.classList.remove("font-xxs")
+    } else if(passwordLength > 22) {
+        inputEl.classList.add("font-sm")
+        inputEl.classList.remove("font-xs")
+        inputEl.classList.remove("font-xxs")
+    } else {
+        inputEl.classList.remove("font-sm")
+        inputEl.classList.remove("font-xs")
+        inputEl.classList.remove("font-xxs")
     }
 }
 
